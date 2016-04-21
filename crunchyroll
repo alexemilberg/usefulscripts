@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "username:"
+read username
+
+echo "password:"
+read -s password
+
+echo "The crunchyroll url please:"
+read url
+
+livestreamer --crunchyroll-username $username --crunchyroll-password $password $url high
